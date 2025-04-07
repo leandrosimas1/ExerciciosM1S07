@@ -8,15 +8,13 @@ import java.util.List;
 
 @Getter
 @Setter
-
-
 public class Route {
     private Long id;
     private String description;
     private String coverageArea;
     private BigDecimal efficiencyPercentage;
 
-
+    @Getter
     public static final List<Route> routes = new ArrayList<>();
             private static Long sequence = 1L;
 
