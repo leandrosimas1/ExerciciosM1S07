@@ -16,12 +16,14 @@ public class RouteService {
     public List<Route> findall() {
         return Route.getRoutes();
     }
-    public List<Route> findId(Long id) {
+
+    public Route findId(Long id) {
         for (Route route : Route.getRoutes()) {
-            if (route.getiD().equals(id)) {
+            if (route.getId().equals(id)) {
                 return route;
             }
         }
         return null;
     }
 }
+

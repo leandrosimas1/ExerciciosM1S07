@@ -25,7 +25,7 @@ public class ContractService {
 
         List<Route> routes = new ArrayList<>();
         for (Route route : contract.getRoutes()){
-            Route foundRoute = (Route) routeService.findId(route.getId());
+            Route foundRoute = routeService.findId(route.getId());
             if (foundRoute == null){return null;}
             else {routes.add(foundRoute);}
 

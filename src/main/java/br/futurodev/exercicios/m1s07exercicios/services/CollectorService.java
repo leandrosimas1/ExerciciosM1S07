@@ -16,7 +16,7 @@ public class CollectorService {
         return Collector.getCollectors();
     }
 
-    public List<Collector> findId(Long id) {
+    public Collector findId(Long id) {
         for (Collector collector : Collector.getCollectors()) {
             if (collector.getId().equals(id)) {
                 return collector;
